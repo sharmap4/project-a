@@ -1,0 +1,8 @@
+{
+  "serviceName": "Application tracking service",
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": true
+    }
+  }
+}

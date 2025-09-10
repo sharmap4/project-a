@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Passport application",
+        html: "In progress<br><strong>UTN: XYA 22 03 1OE</strong>"
+      }) }}
+
+      <p>
+        Your application is being processed. You can check the status of your application at any time by returning to this service and entering your Unique Tracking Number (UTN).
+      </p>
+
+      <h2 class="govuk-heading-m">
+        What happens next
+      </h2>
+
+      <p>
+        You will receive an email or letter within 3 weeks with either your passport, or more information about your application.
+      </p>
+
+      <p>
+        <a href="/start">
+          Check the status of another application
+        </a> 
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
